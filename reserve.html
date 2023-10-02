@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>23020776D_Drink Ordering System</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <style>
+            /* Step 9: Create a rule for "table" class */
+            .table {
+                fill: green;
+                stroke: black;
+                stroke-width: 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body class="container-fluid d-flex flex-column">
+        <header class="h2 bg-primary text-light text-center py-2 p-0 m-0">Drink Ordering System</header>        
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid p-0">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center p-0" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link py-2" href="./index.html">Home</a>
+                  <a class="nav-link py-2" href="./order.html">Order</a>
+                  <a class="nav-link active fw-bold link-primary py-2" aria-current="page" href="./reserve.html">Reserve a Table</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <div class="container text-center">
+            <svg width="400" height="100">
+                <circle class="table" cx="50" cy="50" r="30" />
+                <circle class="table" cx="150" cy="50" r="30" />
+                <circle class="table" cx="250" cy="50" r="30" />
+                <circle class="table" cx="350" cy="50" r="30" />
+              
+                <!-- Step 10: Add <text> element inside each circle -->
+                <text x="50" y="50" text-anchor="middle" alignment-baseline="central" fill="white">1</text>
+                <text x="150" y="50" text-anchor="middle" alignment-baseline="central" fill="white">2</text>
+                <text x="250" y="50" text-anchor="middle" alignment-baseline="central" fill="white">3</text>
+                <text x="350" y="50" text-anchor="middle" alignment-baseline="central" fill="white">4</text>
+            </svg>
+
+        </div>
+
+        <div id="selected-table" class="text-center fw-bold fs-2 mt-2"></div>
+
+
+       <footer class="container-fluid h4 bg-primary text-light text-center py-0 p-0 m-0 fixed-bottom">
+         <h5>© &lt23020776D&gt &ltHUI Siu Ming&gt - EIE4432 Lab 2 Project - Date & Time: 
+            <script type="text/javascript">
+            <!--
+            var currentTime = new Date()
+            var month = currentTime.getMonth() + 1
+            var day = currentTime.getDate()
+            var year = currentTime.getFullYear()
+            document.write(day + "/" + month + "/" + year)
+            //-->
+            </script>
+            <script type="text/javascript">
+            <!--
+            var currentTime = new Date()
+            var hours = currentTime.getHours()
+            var minutes = currentTime.getMinutes()
+            if (minutes < 10){
+            minutes = "0" + minutes
+            }
+            document.write(hours + ":" + minutes + " ")
+            if(hours > 11){
+            document.write("PM")
+            } else {
+            document.write("AM")
+            }
+            //-->
+            </script>
+         </h5>
+       </footer>
+
+       <script>
+        // Step 16: Create a function selectTable(tableNumber)
+        function selectTable(tableNumber) {
+            // Step 17: Retrieve the HTML element with the ID "selected-table"
+            const selectedTableElement = document.getElementById("selected-table");
+            // Set the text content of the element to "You are selecting: Table " + tableNumber
+            selectedTableElement.textContent = "You are selecting: Table " + tableNumber;
+        }
+        // Add onclick event handler to each <circle>
+            const tableElements = document.getElementsByClassName("table");
+            for (let i = 0; i < tableElements.length; i++) {
+                const tableElement = tableElements[i];
+                const tableNumber = i + 1;
+                tableElement.onclick = function() {
+                    selectTable(tableNumber);
+            };
+        }
+        </script>
+
+    </body>
+    
+</html>
