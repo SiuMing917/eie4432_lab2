@@ -2,13 +2,61 @@
     {
         "name": "Bubble Milk Tea",
         "type": "Classic Drinks",
-        "price": "$30 (S), $35 (M), $40 (L)",
+        "price": "$10 (S), $15 (M), $20 (L)",
         "image": "assets/bubble-milktea.png"
     },
     {
         "name": "Iced Latte",
         "type": "Coffee",
-        "price": "$30 (S), $35 (M), $40 (L)",
+        "price": "$12 (S), $17 (M), $22 (L)",
         "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "Mango Smoothie",
+        "type": "Smoothie",
+        "price": "$15 (S), $20 (M), $25 (L)",
+        "image": "assets/mango-smoothie.jpg"
+    },
+    {
+        "name": "white Coffee",
+        "type": "Coffee",
+        "price": "$11 (S), $16 (M), $21 (L)",
+        "image": "assets/white-coffee.jpg"
+    },
+    {
+        "name": "Raspberry Lemonade",
+        "type": "Juice",
+        "price": "$15 (S), $20 (M), $25 (L)",
+        "image": "assets/raspberry-lemonade.jpg"
+    },
+    {
+        "name": "Matcha Green Tea Latte",
+        "type": "Tea",
+        "price": "$15 (S), $20 (M), $25 (L)",
+        "image": "assets/matcha-green-tea-latte.jpg"
+    },
+    {
+        "name": "Strawberry Banana Smoothie",
+        "type": "Smoothie",
+        "price": "$17 (S), $22 (M), $27 (L)",
+        "image": "assets/strawberry-banana-smoothie.jpg"
+    },
+    {
+        "name": "Silk Stocking Milk Tea",
+        "type": "Classic Drinks",
+        "price": "$17 (S), $22 (M), $27 (L)",
+        "image": "assets/silk-stocking-milk-tea.jpg"
+    },
+    {
+        "name": "Mocha Cappuccino",
+        "type": "Coffee",
+        "price": "$15 (S), $20 (M), $25 (L)",
+        "image": "assets/mocha-cappuccino.jpg"
+    },
+    {
+        "name": "Iced Chai Latte",
+        "type": "Tea",
+        "price": "$12 (S), $17 (M), $22 (L)",
+        "image": "assets/iced-chai-latte.jpg"
     }
 ]
